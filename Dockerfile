@@ -1,4 +1,4 @@
-FROM node:14.7.0-alpine3.12
+FROM node:14.15.1-alpine3.12
 
 RUN apk add bash
 RUN apk add bash-completion
@@ -24,7 +24,7 @@ RUN echo "alias c='clear'" >> $HOME/.bashrc
 COPY package*.json ./
 RUN npm i npm@latest -g
 RUN npm install -g
-RUN npm install -g create-react-app@3.4.1
+RUN npm install -g create-react-app@4.0.1
 
 # If you are building your code for production
 # RUN npm install --only=production
