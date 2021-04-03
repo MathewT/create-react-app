@@ -25,7 +25,7 @@ RUN echo "alias c='clear'" >> $HOME/.bashrc
 COPY package*.json ./
 RUN npm i npm@latest -g
 RUN npm install -g
-RUN npm install -g create-react-app@4.0.2
+RUN npm install -g create-react-app@4.0.3
 
 # If you are building your code for production
 # RUN npm install --only=production
